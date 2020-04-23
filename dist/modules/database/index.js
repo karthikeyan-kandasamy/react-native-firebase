@@ -8,7 +8,8 @@ import TransactionHandler from './transaction';
 import ModuleBase from '../../utils/ModuleBase';
 import { getNativeModule } from '../../utils/native';
 import firebase from '../core/firebase';
-const NATIVE_EVENTS = ['database_transaction_event'];
+const NATIVE_EVENTS = ['database_transaction_event' // 'database_server_offset', // TODO
+];
 export const MODULE_NAME = 'RNFirebaseDatabase';
 export const NAMESPACE = 'database';
 /**
