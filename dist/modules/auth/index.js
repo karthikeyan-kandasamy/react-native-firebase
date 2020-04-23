@@ -20,7 +20,6 @@ import GithubAuthProvider from './providers/GithubAuthProvider';
 import OAuthProvider from './providers/OAuthProvider';
 import TwitterAuthProvider from './providers/TwitterAuthProvider';
 import FacebookAuthProvider from './providers/FacebookAuthProvider';
-import AppleAuthProvider from './providers/AppleAuthProvider';
 const NATIVE_EVENTS = ['auth_state_changed', 'auth_id_token_changed', 'phone_auth_state_changed'];
 export const MODULE_NAME = 'RNFirebaseAuth';
 export const NAMESPACE = 'auth';
@@ -474,7 +473,6 @@ export const statics = {
   GithubAuthProvider,
   TwitterAuthProvider,
   FacebookAuthProvider,
-  AppleAuthProvider,
   OAuthProvider,
   PhoneAuthState: {
     CODE_SENT: 'sent',

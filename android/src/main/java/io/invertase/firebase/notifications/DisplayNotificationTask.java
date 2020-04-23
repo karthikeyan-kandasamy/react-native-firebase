@@ -135,14 +135,9 @@ public class DisplayNotificationTask extends AsyncTask<Void, Void, Void> {
         }
 
         if (bigPicture.containsKey("largeIcon")) {
-          String largeIconStr = bigPicture.getString("largeIcon");
-          if (largeIconStr == null) {
-            bp = bp.bigLargeIcon(null);
-          } else {
-            Bitmap largeIconBitmap = getBitmap(largeIconStr);
-            if (largeIconBitmap != null) {
-              bp = bp.bigLargeIcon(largeIconBitmap);
-            }
+          Bitmap largeIcon = getBitmap(bigPicture.getString("largeIcon"));
+          if (largeIcon != null) {
+            bp = bp.bigLargeIcon(largeIcon);
           }
         }
 

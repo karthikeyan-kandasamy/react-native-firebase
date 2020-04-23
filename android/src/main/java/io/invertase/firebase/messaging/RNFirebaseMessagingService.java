@@ -2,7 +2,6 @@ package io.invertase.firebase.messaging;
 
 import android.content.Intent;
 import android.content.ComponentName;
-//import androidx.core.content.LocalBroadcastManager;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.util.Log;
 
